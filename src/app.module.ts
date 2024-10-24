@@ -25,8 +25,4 @@ import { EnvConfiguration } from './config/env.config';
   controllers: [],
   providers: [],
 })
-export class AppModule {
-  constructor(){
-    console.log(process.env)
-  }
-}
+export class AppModule {}
