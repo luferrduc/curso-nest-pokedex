@@ -13,7 +13,9 @@ export class PokemonService {
     // Decorador que permtite usar el modelo de mongo como servicio
     @InjectModel(Pokemon.name) 
     private readonly pokemonModel: Model<Pokemon>
-  ){}
+  ){
+    console.log(process.env.DEFAULT_LIMIT)
+  }
 
   async create(createPokemonDto: CreatePokemonDto) {
     createPokemonDto.name = createPokemonDto.name.toLocaleLowerCase();
