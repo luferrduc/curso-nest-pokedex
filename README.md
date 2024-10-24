@@ -17,13 +17,13 @@ npm i -g @nest/cli
 ```bash
 docker compose up -d
 ```
-5. Arrancar la app
+5. Clonar el archivo __.env.template__ y renombrar la copia a __.env__
+6. Llenar las variables de entorno definidas en ```.env```
+7. Arrancar la app
 ```bash
 yarn start:dev
 ```
-7. Clonar el archivo __.env.template__ y renombrar la copia a __.env__
-8. Llenar las variables de entorno definidas en ```.env```
-9. Reconstruir la base de datos con la semilla
+8. Reconstruir la base de datos con la semilla
 ```
 http://localhost:3000/api/v2/seed
 ```
